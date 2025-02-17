@@ -7,7 +7,10 @@ const createRivers = () => {
 
 const createMountains = () => {
     const mountains = Math.floor(Math.random() * 2) + 1
-    return mauntains
+    // return mauntains
+    return mountains
+    // Misspelling of mountains
+
 }
 
 const createForests = () => {
@@ -24,11 +27,18 @@ const journeyMaker = () => {
     const journey = []
 
     const areas = {
-        rivers: createRiver(),
-        forests: createForest(),
-        mountains: createMountain(),
-        plains: createPlain()
+        // rivers: createRiver(),
+        // forests: createForest(),
+        // mountains: createMountain(),
+        // plains: createPlain()
+        rivers: createRivers(),
+        forests: createForests(),
+        mountains: createMountains(),
+        plains: createPlains()
+        // All of these functions were missing 's's on the end
     }
+    // Areas creates an array where each item is one of the 4 types of areas, along with a random integer
+    // This creates a random list of areas/sceneries that the pack will travel through
 
     for (let riverNumber = 0; riverNumber < areas.rivers; riverNumber++) {
         journey.push("river")
@@ -51,5 +61,7 @@ const journeyMaker = () => {
 
 module.exports = {
     createRivers, createForests,
-    createMountains, createPlains
+    createMountains, createPlains,
+    journeyMaker
+    // journeyMaker wasn't included in export list
 }

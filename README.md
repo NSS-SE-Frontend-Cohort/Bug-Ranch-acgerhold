@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > After fixing the bugs, 'drovers' represents a list of random drovers from database.js needed to accommodate for the desired herd size, dictated by the parameter 'herdSize'.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > In the context of this for-loop, 'drover' represents each drover object being iterated through in the 'drovers' array.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > (https://www.loom.com/share/06822f9db0df4e5b83df51bc31bb443c?sid=bfae8c02-c6d2-4e26-83b8-66f31eaad50d)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This is an incremental for-loop. Starting at 0 (let forestNumber = 0), while the number of forest areas is greater than forestNumber (forestNumber < areas.forest), increment 1 to forestNumber with each loop (forestNumber++). So, if forest gets the number 3 randomly generated from createForests(), that code will loop 3 times. 0 + 1 + 1 + 1 = 3 , forest number is now not less than areas.forest.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database module contains pre-made data for cattle types and drovers that can be exported and used in other modules.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > That parameter is defining the desired herd size for the journey. It is defined one calling hireDrovers() with an integer argument. For example, hireDrovers(50). herdSize is then used to determine the number of drovers necessary for the journey.
 
 ## When You Are Done
 
